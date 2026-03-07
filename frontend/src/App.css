@@ -1,0 +1,7 @@
+/* Reset Vite defaults — let MUI handle layout */
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
