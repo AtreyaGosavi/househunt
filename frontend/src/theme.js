@@ -104,7 +104,11 @@ const theme = createTheme({
     MuiAppBar: {
       styleOverrides: {
         root: {
-          boxShadow: '0px 2px 8px rgba(15,23,42,0.10)',
+          boxShadow: 'none',
+          width: '100%',
+          left: 0,
+          right: 0,
+          margin: 0,
         },
       },
     },

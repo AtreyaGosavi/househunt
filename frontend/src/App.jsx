@@ -35,9 +35,9 @@ const PrivateRoute = ({ children, roles }) => {
 function App() {
   return (
     <Router>
-      <div className="d-flex flex-column min-vh-100">
+      <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', width: '100%', overflow: 'hidden' }}>
         <Navbar />
-        <main className="flex-grow-1">
+        <Box component="main" sx={{ flexGrow: 1 }}>
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/login" element={<LoginPage />} />
@@ -56,9 +56,9 @@ function App() {
             {/* Admin Routes */}
             <Route path="/admin" element={<PrivateRoute roles={['Admin']}><AdminPanel /></PrivateRoute>} />
           </Routes>
-        </main>
+        </Box>
         <Footer />
-      </div>
+      </Box>
     </Router>
   );
 }
